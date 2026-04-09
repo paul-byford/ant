@@ -1,11 +1,17 @@
 [
   {
-    "task": "Write a Python function that extracts the AWS region from an S3 bucket URL in the format 's3://bucket-name.region.amazonaws.com'. Return the region string."
+    "task": "Parse an AWS CloudFormation template to extract all EC2 instance logical IDs and their instance types",
+    "format": "python",
+    "solution_criteria": "Solution should read a JSON CloudFormation template, iterate through Resources, filter for Type 'AWS::EC2::Instance', and return a dictionary mapping logical IDs to their InstanceType properties"
   },
   {
-    "task": "Create a JSON object representing an AWS IAM policy that grants read-only access to all objects in an S3 bucket named 'my-data-bucket'."
+    "task": "Create a JSON policy document that allows an IAM user to perform read-only operations on S3 buckets matching the pattern 'company-*'",
+    "format": "json",
+    "solution_criteria": "Solution should be a valid AWS IAM policy with appropriate Action statements (s3:GetObject, s3:ListBucket), Resource ARNs with wildcard matching 'company-*', and Effect set to Allow"
   },
   {
-    "task": "Write a regular expression that matches valid AWS EC2 instance IDs (format: i- followed by 17 hexadecimal characters)."
+    "task": "Write a regex pattern to validate and extract AWS ARN components from a string containing multiple ARNs",
+    "format": "regex",
+    "solution_criteria": "Regex should match valid AWS ARN format (arn:partition:service:region:account-id:resource-type/resource-id) and capture individual components like service, region, account ID, and resource identifier"
   }
 ]
