@@ -1,0 +1,11 @@
+[
+  {
+    "task": "Write a Python function that extracts the AWS region from an S3 bucket URL in the format 's3://bucket-name.region.amazonaws.com'. Return the region string."
+  },
+  {
+    "task": "Create a JSON object representing an AWS IAM policy that grants read-only access to all objects in an S3 bucket named 'my-data-bucket'."
+  },
+  {
+    "task": "Write a regular expression that matches valid AWS EC2 instance IDs (format: i- followed by 17 hexadecimal characters)."
+  }
+]
