@@ -1,17 +1,49 @@
 [
   {
-    "task": "Parse an AWS CloudFormation template to extract all EC2 instance logical IDs and their instance types",
-    "format": "python",
-    "solution_criteria": "Solution should read a JSON CloudFormation template, iterate through Resources, filter for Type 'AWS::EC2::Instance', and return a dictionary mapping logical IDs to their InstanceType properties"
+    "prompt_inputs": {
+      "height": "180 cm",
+      "weight": "85 kg",
+      "goal": "Muscle recovery and strength gains with high protein intake",
+      "restrictions": "None"
+    },
+    "solution_criteria": [
+      "Meal plan covers one full day with breakfast, lunch, dinner, and snacks",
+      "Each meal prioritizes protein with macronutrient ratio approximately 40% protein, 35% carbohydrates, 25% fats",
+      "Total daily calories and protein targets are appropriate for an 85kg strength athlete"
+    ],
+    "task_description": "Write a compact, concise, one day meal plan for a single athlete",
+    "scenario": "Testing with a strength/power athlete (weightlifter) requiring protein-focused meals for muscle recovery with specific macronutrient ratios"
   },
   {
-    "task": "Create a JSON policy document that allows an IAM user to perform read-only operations on S3 buckets matching the pattern 'company-*'",
-    "format": "json",
-    "solution_criteria": "Solution should be a valid AWS IAM policy with appropriate Action statements (s3:GetObject, s3:ListBucket), Resource ARNs with wildcard matching 'company-*', and Effect set to Allow"
+    "prompt_inputs": {
+      "height": "178 cm",
+      "weight": "68 kg",
+      "goal": "Endurance performance for a 120km cycling event in 5 days",
+      "restrictions": "Vegan (no animal products)"
+    },
+    "solution_criteria": [
+      "Meal plan covers one full day with breakfast, lunch, dinner, and snacks",
+      "All foods are vegan with no animal products",
+      "Includes nutrient-dense plant-based proteins, carbohydrates, and healthy fats suitable for endurance cycling",
+      "Plan is compact and concise (suitable for quick reference)"
+    ],
+    "task_description": "Write a compact, concise, one day meal plan for a single athlete",
+    "scenario": "Testing with an athlete with dietary restrictions (vegan endurance cyclist) requiring nutrient-dense plant-based alternatives while meeting performance nutrition needs"
   },
   {
-    "task": "Write a regex pattern to validate and extract AWS ARN components from a string containing multiple ARNs",
-    "format": "regex",
-    "solution_criteria": "Regex should match valid AWS ARN format (arn:partition:service:region:account-id:resource-type/resource-id) and capture individual components like service, region, account ID, and resource identifier"
+    "prompt_inputs": {
+      "height": "180",
+      "weight": "70",
+      "goal": "Marathon preparation with carbohydrate loading for sustained endurance performance",
+      "restrictions": "None"
+    },
+    "solution_criteria": [
+      "Meal plan totals approximately 4000+ calories",
+      "Carbohydrates comprise 55-65% of total calories for endurance fuel",
+      "Includes 5-6 meals/snacks distributed throughout the day for sustained energy",
+      "All meals are practical and consumable within a single day"
+    ],
+    "task_description": "Write a compact, concise, one day meal plan for a single athlete",
+    "scenario": "Testing with a high-endurance athlete (marathon runner) requiring 4000+ calories with emphasis on carbohydrate loading and sustained energy"
   }
 ]
